@@ -1,0 +1,77 @@
+@import "./colors";
+@import "./mixin";
+
+
+.header {
+    // position: sticky;
+    top: 0;
+
+    .headerTop {
+        @include flex-center;
+        justify-content: space-between;
+        height: 4rem;
+        background-color: $white-color;
+
+
+        .searchBox {
+
+            button {
+                width: 50px;
+                height:50px;
+                border: none;
+                border-radius: 5px;
+                background-color: $main-color;
+                color: $white-color;
+
+                .searchIcon {
+                    width: 20px;
+                }
+            }
+        }
+
+        .rightButtons {
+            @include flex-center;
+            margin-right: 1rem;
+            
+            .cartIcon {
+                color: $main-color;
+            }
+
+            button {
+                margin: 0 1rem;
+                width: 100px;
+                height:30px;
+                background-color: $main-color;
+                color: $white-color;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+
+                a {
+                    text-decoration: none;
+                    color: $white-color;
+                }
+            }
+            .basket {
+                color: $main-color;
+            }
+        }
+    }
+
+    .headerBottom{
+        @include flex-space-between;
+        background-color: $main-color;
+        color: $white-color;      
+        padding: 20px 50px;
+
+        .listProducts {
+            @include flex-center;
+
+
+            .listProductsText {
+                margin: 0 50px 0 10px;
+            }
+        }
+
+    }
+}

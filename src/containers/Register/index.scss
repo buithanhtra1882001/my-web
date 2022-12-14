@@ -1,0 +1,23 @@
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/mixin";
+
+.register {
+    font-family: $font-inter;
+    background: $main-color;
+    padding: 40px;
+
+    .container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-radius: 10px;
+    }
+}
+
+
+
+
+img {
+    width: 600px;
+    height: 942.86px;
+}

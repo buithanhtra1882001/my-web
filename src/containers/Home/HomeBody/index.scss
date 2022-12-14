@@ -1,0 +1,206 @@
+@import '../../../assets/styles/mixin';
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.homeBody {
+    .bodyHeader {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        column-gap: 10px;
+        .slider {
+            margin: 10px 20px;
+            position: relative;
+
+            img {
+                display: block;
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            .slide-item {
+                position: absolute;
+                inset: 0;
+                opacity: 0;
+            }
+
+            .slide-item[data-active] {
+                opacity: 1;
+            }
+
+            .slider-button {
+                position: absolute;
+                z-index: 2;
+                background: none;
+                border: none;
+                font-size: 2rem;
+                top: 50%;
+                transform: translateY(-50%);
+                cursor: pointer;
+                border-radius: 25rem;
+                padding: 0 .25rem;
+                background-color: $grayText-color;
+                :hover, :focus {
+                    color: white;
+                }
+            }
+            .slider-button.prev {
+                left: 1rem;
+            }
+            .slider-button.next {
+                right: 1rem;
+            }
+            
+        }
+    }
+    .bodyProduct{
+        display: grid;
+        grid-template-columns: 75% 25%;
+        .bodyProductLeft {
+            
+            .top {
+                @include flex-space-between;
+                font-weight: 700;
+                background-color: $secondary-color;
+                margin: 10px 0px;
+    
+                .topText {
+                    background-color: $main-color;
+                    padding: 10px;
+                }
+                .seeMore {
+                    @include flex-center;
+                    margin-right: 10px;
+                } 
+            }
+    
+            .newBook {
+                padding: 10px;
+    
+                .products {
+                    @include flex-space-around;
+    
+                    .box {
+                        width: 250px;
+                        box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                        border-radius: 10px;
+                        overflow: hidden;
+                    
+                        a {
+                            text-decoration: none;
+                        }
+                    
+                        .slide-img {
+                            height: 200px;
+                            position: relative;
+                            padding: 10px;
+                            img {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                border-radius: 10px;
+                            }
+                    
+                            .overlay {
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                transform: translate(-50%,-50%);
+                                width: 100%;
+                                height: 100%;
+                                background-color: rgba(52, 152, 202, 0.6);
+                                @include flex-center;
+                                flex-direction: column;
+                                justify-content: center;
+                                visibility: hidden;
+                    
+                    
+                                .buy-btn {
+                                    width: 200px;
+                                    height: 40px;
+                                    margin: 5px;
+                                    @include flex-center;
+                                    justify-content: center;
+                                    background-color: $white-color;
+                                    color: $black-color;
+                                    font-weight: 700;
+                                    letter-spacing: 1px;
+                                    font-family: $font-inter;
+                                    border-radius: 20px;
+                                    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                    
+                                    &:hover {
+                                        color: $white-color;
+                                        background-color: $red-color;
+                                        transition: all ease 0.3s;
+                                    }
+                                }
+    
+                            }
+                        }
+                    
+                        .detail-box {
+                            width: 100%;
+                            @include flex-space-between;
+                            padding: 10px 20px;
+                            box-sizing: border-box;
+                            font-family: $font-inter;
+                    
+                            .type {
+                                display: flex;
+                                flex-direction: column;
+                    
+                                a {
+                                    color: $main-color;
+                                    margin: 5px 0px;
+                                    font-weight: 700;
+                                    letter-spacing: 0.5px;
+                                    padding-right: 8px;
+                                }
+                    
+                                span {
+                                    color: rgba(26,26,26,0.5);
+                                }
+                    
+                                .price {
+                                    color: $black-color;
+                                    font-weight: 600;
+                                    font-size: 1.1rem;
+                                    font-family: $font-inter;
+                                    letter-spacing: 0.5px;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .slide-img:hover .overlay {
+                        visibility: visible;
+                        animation: fade 0.5;
+                    }
+                }
+            }
+    
+            .bestSeller {
+                padding: 10px;
+            }
+        }
+        
+    }
+}
+
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%  {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 900px) {
+    
+}

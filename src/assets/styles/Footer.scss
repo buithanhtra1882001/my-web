@@ -1,0 +1,45 @@
+@import "./colors";
+@import "./mixin";
+
+.footer {
+    background-color: $main-color;
+    color: $white-color;
+    
+    .footerTop {
+        @include flex-space-around;
+        
+        align-items: baseline;
+        margin: 0 200px;
+        width: auto;
+        height: 200px;
+
+
+        .title {
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .content {
+            opacity: 0.8;
+        }
+
+        .connectWithUs {
+            .contact {
+                @include flex-space-around;
+                align-items: baseline;
+                
+            }
+        }
+    }
+
+    .footerBottom {
+        text-align: center;
+
+        p {
+            width: 30%;
+            padding: 5px;
+            margin: auto;
+            line-height: 30px;
+        }
+    }
+}
