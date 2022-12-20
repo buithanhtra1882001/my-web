@@ -146,6 +146,33 @@ function HomeBody() {
                     </div>
                 </div>
               
+                {/* Item 5 */}
+                <div className="box">
+                    <div className="slide-img">
+                      <img src={newBook1} alt="1" />
+                      <div className="overlay">
+                        <a href="#" className="buy-btn">Mua Ngay</a>
+                        <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
+                      </div>
+                    </div>
+                    <div className="detail-box">
+                      <div className="detail-top">
+                        <div className="type">
+                          <a href="#">Rabbed Cardigan</a>
+                          <span>
+                            <a href="#" className="price">
+                            200,000 đ
+                            </a>
+                          </span>
+                        </div>
+                        <div className="discout">40%</div>
+                      </div>
+                      <div className="sold">
+                        <p>Đã bán 2</p>
+                        <div className="sold-btn"></div>
+                      </div>
+                    </div>
+                </div>
               </div>
           </div>
           <div className="bestSeller">

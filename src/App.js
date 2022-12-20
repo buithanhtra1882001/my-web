@@ -11,8 +11,8 @@ function App() {
       {/* <Home /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      {/* <ProductIndex /> */}
-      <CartIndex />
+      <ProductIndex />
+      {/* <CartIndex /> */}
     </div>
   );
 }
