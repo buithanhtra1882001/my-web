@@ -1,9 +1,6 @@
-import Home from "./containers/Home";
-import Login from "./containers/Login";
-import Register from "./containers/Register";
-import './App.scss'
+import "./App.css";
+import DetailProduct from "./containers/ProductDetail";
 import ProductIndex from "./containers/Products";
-import CartIndex from "./containers/Cart";
 
 function App() {
   return (
@@ -11,7 +8,8 @@ function App() {
       {/* <Home /> */}
       {/* <Login /> */}
       {/* <Register /> */}
-      <ProductIndex />
+      {/* <ProductIndex /> */}
+      <DetailProduct />
       {/* <CartIndex /> */}
     </div>
   );
