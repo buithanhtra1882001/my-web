@@ -1,0 +1,310 @@
+@import '../../../assets/styles/mixin';
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+
+.productContainer {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    // column-gap: 10px;
+
+    .leftContainer {
+        margin: 20px 0 0 30px;
+        .path {
+            display: flex;
+            font-size: 16px;
+            font-weight: 700;
+            .pathHome {
+                margin-right: 10px;
+            }
+            .pathProduct {
+                margin-left: 10px;
+            }
+        }
+        .title {
+            text-align: center;
+            padding: 10px;
+            background-color: $main-color;
+            font-size: 20px;
+            font-weight: 700;
+            color: $white-color;
+        }
+        .category {
+            margin: 10px 0 0 10px;
+            text-indent: 10px;
+            color: #606060;
+            cursor: pointer;
+
+            .itemCategory {
+                padding: 2px;
+                border: 1px solid #EEEEEE;
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+        .price {
+            margin: 10px 0 0 10px;
+            .itemPrice {
+                .checkBox {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #EEEEEE;
+                    padding: 10px;
+                
+                    label {
+                        cursor: pointer;
+                        display: flex;
+
+                        &:before {
+                            content: '';
+                            width: 1em;
+                            height: 1em;
+                            border: .05em solid black;
+                            margin-right: .5em;
+                            border-radius: .15em;
+                        }
+                        
+                    }
+                    
+                    input[type="checkbox"] {
+                        cursor: pointer;
+                        opacity: 0;
+                        position: absolute;
+                    }
+
+                    label:hover::before,
+                    input[type="checkbox"]:hover + label::before {
+                        background-color: $main-color;
+                    }
+
+
+                    input[type="checkbox"]:checked + label::before {
+                        content: '\002714';
+                        @include flex-center;
+                        justify-content: center;
+                        color: $white-color;
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+
+        .age {
+            margin: 10px 0 0 10px;
+            .itemAge {
+                .checkBox {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #EEEEEE;
+                    padding: 10px;
+                
+                    label {
+                        cursor: pointer;
+                        display: flex;
+
+                        &:before {
+                            content: '';
+                            width: 1em;
+                            height: 1em;
+                            border: .05em solid black;
+                            margin-right: .5em;
+                            border-radius: .15em;
+                        }
+                        
+                    }
+                    
+                    input[type="checkbox"] {
+                        cursor: pointer;
+                        opacity: 0;
+                        position: absolute;
+                    }
+
+                    label:hover::before,
+                    input[type="checkbox"]:hover + label::before {
+                        background-color: $main-color;
+                    }
+
+
+                    input[type="checkbox"]:checked + label::before {
+                        content: '\002714';
+                        @include flex-center;
+                        justify-content: center;
+                        color: $white-color;
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+
+        .type {
+            margin: 10px 0 10px 10px;
+            .itemType {
+                .checkBox {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid #EEEEEE;
+                    padding: 10px;
+                
+                    label {
+                        cursor: pointer;
+                        display: flex;
+
+                        &:before {
+                            content: '';
+                            width: 1em;
+                            height: 1em;
+                            border: .05em solid black;
+                            margin-right: .5em;
+                            border-radius: .15em;
+                        }
+                        
+                    }
+                    
+                    input[type="checkbox"] {
+                        cursor: pointer;
+                        opacity: 0;
+                        position: absolute;
+                    }
+
+                    label:hover::before,
+                    input[type="checkbox"]:hover + label::before {
+                        background-color: $main-color;
+                    }
+
+
+                    input[type="checkbox"]:checked + label::before {
+                        content: '\002714';
+                        @include flex-center;
+                        justify-content: center;
+                        color: $white-color;
+                        background-color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .rightContainer {
+        margin: 20px 0 0 10px;
+        .top {
+            @include flex-center;
+            margin-left: 20px;
+            background-color: $grayText-color;
+            .arrange {
+                margin-right: 20px;
+                text-indent: 20px;
+            }
+
+            .arrangeButton {
+                padding: 5px 50px;
+                background-color: $white-color;
+                border-radius: 10px;
+                border: 1px solid $grayText-color;
+                margin: 5px;
+            }
+        }
+        
+        .products {
+            @include flex-space-around;
+            margin: 10px 0;
+
+            .box {
+                width: 250px;
+                box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+                border-radius: 10px;
+                overflow: hidden;
+            
+                a {
+                    text-decoration: none;
+                }
+            
+                .slide-img {
+                    height: 200px;
+                    position: relative;
+                    padding: 10px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 10px;
+                    }
+            
+                    .overlay {
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 100%;
+                        height: 100%;
+                        background-color: rgba(52, 152, 202, 0.6);
+                        @include flex-center;
+                        flex-direction: column;
+                        justify-content: center;
+                        visibility: hidden;
+            
+            
+                        .buy-btn {
+                            width: 200px;
+                            height: 40px;
+                            margin: 5px;
+                            @include flex-center;
+                            justify-content: center;
+                            background-color: $white-color;
+                            color: $black-color;
+                            font-weight: 700;
+                            letter-spacing: 1px;
+                            font-family: $font-inter;
+                            border-radius: 20px;
+                            box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+            
+                            &:hover {
+                                color: $white-color;
+                                background-color: $red-color;
+                                transition: all ease 0.3s;
+                            }
+                        }
+
+                    }
+                }
+            
+                .detail-box {
+                    width: 100%;
+                    @include flex-space-between;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    font-family: $font-inter;
+            
+                    .type {
+                        display: flex;
+                        flex-direction: column;
+            
+                        a {
+                            color: $main-color;
+                            margin: 5px 0px;
+                            font-weight: 700;
+                            letter-spacing: 0.5px;
+                            padding-right: 8px;
+                        }
+            
+                        span {
+                            color: rgba(26,26,26,0.5);
+                        }
+            
+                        .price {
+                            color: $black-color;
+                            font-weight: 600;
+                            font-size: 1.1rem;
+                            font-family: $font-inter;
+                            letter-spacing: 0.5px;
+                        }
+                    }
+                }
+            }
+            
+            .slide-img:hover .overlay {
+                visibility: visible;
+                animation: fade 0.5;
+            }
+        }
+    }
+}

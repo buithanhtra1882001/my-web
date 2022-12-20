@@ -7,7 +7,7 @@ function Register() {
     <div className='register'>
         <div className="container">
             <div className="register-left">
-                <img src="https://s3-alpha-sig.figma.com/img/a047/4723/bccd8a0346d8564e060842b0b4b62f80?Expires=1669593600&Signature=AgV1Ub1KYMi5jvHxWZMPb5s1YIp4IaatiTS2fTEuIgXXvKkKddJUDaaV5Am6MoBB1rcT8wq2GsluFb3FrvgeZ4aObhibcRKWcW0xWMNAK0QmAddTL-W~l70rebR92xsoUVa2GvEsdaZxfKPahQrprR6184-Li1063UP0v5IzhEOmsjdI3Z5ROTjhl5vpW05DQbgK6CfMS8PAMzfm6-u4VwnW31dm1otttV~uq843BpV2UCKe~s6-5x0ebWQKiVuZnh9phtfiH5UEOrOEx-E8P2o4GxNC49O4pzKkJbcjjh-vfevgV4eyFMog-ShW70c32X~KFkVY4i7qgP4-AemZiQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA" alt="" />
+                <img src="https://s3-alpha-sig.figma.com/img/a047/4723/bccd8a0346d8564e060842b0b4b62f80?Expires=1672617600&Signature=GZF9dstqN-r4DnEThgMdSiSNlcXtccOAxECu1BfXbJGmEuKUZO6OB7MQHj~rXuv0g3QKAMV1HgC~SN-9kKYamF7JO4ptpcv2oxmjfQEqgkc~flNB6httD17ZhsYcsor9WMvUkH6qiuOeCx0RE1NcgF54VgyuFdo2wHyoa2Kzn1xGsb-F4usQEXzej4spklFqwcuxA4fzafd60azXk4~DuAt0w~rAG7DShavXb3w1-mr20Ch64nzUgUEzENQGZL-EIOhkN6KvMFB7IENLrYoRVrJozXyozdBgjHLy2uIZOpOTo0qRAmJ87VTa1KCWHuScLINX1NoUY80l9SJy5X3zzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
             </div>
             <div className="register-right">
                 <div className="register-header">
@@ -34,7 +34,7 @@ function Register() {
                         <div className="register-bottom">
                             <button type='submit'>Đăng ký</button>
                             <div className="register-bottom-login">
-                                <button>Đăng nhập</button>
+                                <p>Đăng nhập</p>
                                 <FiArrowRight />
                             </div>
                         </div>

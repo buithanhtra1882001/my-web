@@ -13,18 +13,18 @@ function Slider() {
     setNumWidth(listImages.length * carouselRef.current.offsetWidth);
   }, []);
 
-  console.log(left);
+  // console.log(left);
 
   const handleMoveLeft = () => {
     if (left >= 0) {
-      setLeft(-2608);
+      setLeft(-2200);
     } else {
       setLeft((pre) => pre + carouselRef.current.offsetWidth);
     }
   };
 
   const handleMoveRight = () => {
-    if (left === -2608) {
+    if (left <= -2200) {
       setLeft(0);
     } else {
       setLeft((pre) => pre - carouselRef.current.offsetWidth);

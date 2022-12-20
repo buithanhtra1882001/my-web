@@ -25,6 +25,7 @@
                 margin-bottom: 60px;
                 h1 {
                     font-size: 40px;
+                    color: $main-color;
                 }
             }
 
@@ -57,16 +58,30 @@
                             flex: 1;
                             display: inline-block;
                         }
-                        div {
-                            flex: 1;
+                        .login-bottom-register {
+                            display: flex;
+                            text-transform: uppercase;
+                            justify-content: center;
+                            cursor: pointer;
+                            p {
+                                margin-right: 10px;
+                            }
                         }
                     }
                 }
-                        
+                
+                .or {
+                    text-align: center;
+                    margin-top: 50px;
+                    text-transform: uppercase;
+                    font-size: larger;
+                    font-weight: 500;
+                }
+
                 .login-form-footer {
                     display: flex;
                     gap: 30px;
-                    margin-top: 70px;
+                    margin-top: 50px;
 
                     a {
                         @include flex-center;
