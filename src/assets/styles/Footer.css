@@ -1,0 +1,84 @@
+.footer {
+  background-color: #33ccff;
+  color: #FFFFFF;
+}
+
+.footer .footerTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 100px;
+  width: auto;
+  height: 160px;
+}
+
+.footer .footerTop .title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.footer .footerTop .content {
+  opacity: 0.8;
+  margin: 5px 0;
+  text-indent: 5px;
+}
+
+.footer .footerTop .content p {
+  margin: 5px 0;
+}
+
+.footer .footerTop .connectWithUs .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.footer .footerTop .connectWithUs .contact .fb {
+  color: #3B5998;
+  background-color: #FFFFFF;
+  border-radius: 100px;
+}
+
+.footer .footerTop .connectWithUs .contact .yt {
+  color: #FF0000;
+}
+
+.footer .footerTop .connectWithUs .contact .ig {
+  color: #FBAD50;
+}
+
+.footer hr {
+  margin: 10px 300px;
+  color: #FFFFFF;
+  background-color: #FFFFFF;
+}
+
+.footer .footerBottom {
+  text-align: center;
+}
+
+.footer .footerBottom p {
+  width: 30%;
+  padding: 5px;
+  margin: auto;
+  line-height: 30px;
+}
+/*# sourceMappingURL=Footer.css.map */

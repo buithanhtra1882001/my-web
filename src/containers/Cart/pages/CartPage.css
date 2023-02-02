@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.cartContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+}
+
+.cartContainer .leftContainer {
+  margin: 20px 0 0 30px;
+}
+
+.cartContainer .leftContainer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.cartContainer .leftContainer .top .path {
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.cartContainer .leftContainer .tableListProduct {
+  margin: 10px;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 15% 15% 15%;
+      grid-template-columns: 55% 15% 15% 15%;
+  padding: 10px;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox label:before {
+  content: '';
+  width: 1em;
+  height: 1em;
+  border: .05em solid black;
+  margin-right: .5em;
+  border-radius: .15em;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox input[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox label:hover::before,
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox input[type="checkbox"]:hover + label::before {
+  background-color: #33ccff;
+}
+
+.cartContainer .leftContainer .tableListProduct .tableHeader .checkBox input[type="checkbox"]:checked + label::before {
+  content: '\002714';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #FFFFFF;
+  background-color: #33ccff;
+}
+/*# sourceMappingURL=CartPage.css.map */

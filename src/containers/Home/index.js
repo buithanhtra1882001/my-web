@@ -1,14 +1,15 @@
 import React from 'react'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import HomeBody from './HomeBody'
-import HomeFooter from './HomeFooter'
-import HomeHeader from './HomeHeader'
+
 
 function Home() {
   return (
     <div className='Home'>
-        <HomeHeader />
+        <Header />
         <HomeBody />
-        <HomeFooter />
+        <Footer />
     </div>
   )
 }

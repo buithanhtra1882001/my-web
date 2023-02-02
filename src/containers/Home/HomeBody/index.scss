@@ -14,17 +14,23 @@
             color: #606060;
             cursor: pointer;
             .itemCategory {
-                padding: 2px;
+                padding: 5px;
                 border: 1px solid #EEEEEE;
                 font-size: 16px;
                 font-weight: 700;
+                &:hover {
+                    background-color: $main-color;
+                }
+                .link {
+                    text-decoration: none;
+                    color: #606060;
+                }
             }
         }
-        
 
 
         .slider {
-            margin: 10px 10px;
+            margin: 10px     20px;
             position: relative;
 
             img {
@@ -97,9 +103,9 @@
     
                 .products {
                     @include flex-space-around;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    
+                    // display: grid;
+                    // grid-template-columns: 1fr 1fr 1fr;
+                    // gap: 20px;
                     .box {
                         width: 250px;
                         box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
@@ -228,10 +234,14 @@
                 
                 .products {
                     @include flex-space-around;
+                    display: grid;
+                    gap: 10px;
+                    grid-template-columns: 1fr 1fr 1fr 1fr;
                     margin: 10px 0;
     
                     .box {
                         width: 250px;
+                        // height: 270px;
                         box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
                         border-radius: 10px;
                         overflow: hidden;
@@ -291,27 +301,37 @@
                     
                         .detail-box {
                             width: 100%;
-                            @include flex-space-between;
+                            display: flex;
+                            flex-direction: column;
                             padding: 10px 20px;
                             box-sizing: border-box;
                             font-family: $font-inter;
+                            cursor: pointer;
                     
+                            span {
+                                color: $main-color;
+                                margin: 5px 0px;
+                                font-weight: 700;
+                                letter-spacing: 0.5px;
+                                padding-right: 8px;
+                            }
+
+                            a {
+                                color: $main-color;
+                                margin: 5px 0px;
+                                font-weight: 700;
+                                letter-spacing: 0.5px;
+                                padding-right: 8px;
+                            }
+
                             .type {
-                                display: flex;
-                                flex-direction: column;
-                    
-                                a {
-                                    color: $main-color;
-                                    margin: 5px 0px;
-                                    font-weight: 700;
-                                    letter-spacing: 0.5px;
-                                    padding-right: 8px;
-                                }
-                    
+                                display: grid;
+                                grid-template-columns: 90% 10%;
+                                justify-content: space-between;
                                 span {
                                     color: rgba(26,26,26,0.5);
                                 }
-                    
+
                                 .price {
                                     color: $black-color;
                                     font-weight: 600;
@@ -319,6 +339,10 @@
                                     font-family: $font-inter;
                                     letter-spacing: 0.5px;
                                 }
+                            }
+                            svg {
+                                width: 24px;
+                                height: 24px;
                             }
                         }
                     }
@@ -481,6 +505,33 @@
     }
 }
 
-@media (max-width: 900px) {
+// Mobile: width <740px
+@media (max-width: 425px) {
+    // .header {
+
+    //     .headerTop {
+    //         max-width: 425px;
+    //         margin-left: 5px;
+    //         .logo {
+    //             img {
+    //                 max-width: 50px;
+    //             }
+    //         }
+    //         .searchBox {
+    //             input {
+    //                 max-width: 100px;
+    //                 max-height: 30px;
+    //             }
+    //         }
+    //         .rightButtons {
+                
+    //         }
+    //     }
+    // }
+}
+
+// Tablet: width >=740px and width <1024px
+@media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
     
 }
+

@@ -12,19 +12,40 @@
         height: 4rem;
         background-color: $white-color;
 
-
+        .logo {
+            margin-left: 50px;
+            padding: 5px;
+            border: 1px solid $main-color;
+            border-radius: 10px;
+            cursor: pointer;
+            img{
+                font-size: 10px;
+                width: 100px;
+                height: auto;
+            }
+        }
         .searchBox {
+            @include flex-center;
+            input {
+                width: 500px;
+                height: 40px;
+                border: 1px solid $main-color;
+                border-radius: 100px;
+                text-indent: 20px;
+                margin-right: 10px;
+            }
 
             button {
-                width: 50px;
-                height:50px;
+                width: 40px;
+                height:40px;
                 border: none;
-                border-radius: 5px;
+                border-radius: 50px;
                 background-color: $main-color;
                 color: $white-color;
+                cursor: pointer;
 
                 .searchIcon {
-                    width: 20px;
+                    font-size: 20px
                 }
             }
         }
@@ -35,12 +56,16 @@
             
             .cartIcon {
                 color: $main-color;
+                font-size: 20px;
+                width: 32px;
+                height: 32px;
+                cursor: pointer;
             }
 
             button {
                 margin: 0 1rem;
-                width: 100px;
-                height:30px;
+                width: 120px;
+                height:40px;
                 background-color: $main-color;
                 color: $white-color;
                 border-radius: 10px;
@@ -65,9 +90,12 @@
         padding: 20px 30px;
 
         .listProducts {
+            cursor: pointer;
             @include flex-center;
 
-
+            .iconList {
+                font-size: 26px;
+            }
             .listProductsText {
                 margin: 0 50px 0 10px;
             }

@@ -6,7 +6,7 @@ function HeaderBottom() {
   return (
     <div className='headerBottom'>
       <div className="listProducts">
-        <BsList />
+        <BsList className="iconList" />
         <div className='listProductsText'> DANH MỤC SẢN PHẨM</div>
         <AiOutlineDown />
       </div>

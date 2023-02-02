@@ -9,9 +9,9 @@
         @include flex-space-around;
         
         align-items: baseline;
-        margin: 0 200px;
+        margin: 0 100px;
         width: auto;
-        height: 200px;
+        height: 160px;
 
 
         .title {
@@ -21,15 +21,38 @@
 
         .content {
             opacity: 0.8;
+            margin: 5px 0;
+            text-indent: 5px;
+            p {
+                margin: 5px 0;
+            }
         }
 
         .connectWithUs {
             .contact {
                 @include flex-space-around;
                 align-items: baseline;
-                
+                font-size: 26px;
+                cursor: pointer;
+                .fb {
+                    color: #3B5998;
+                    background-color: $white-color;
+                    border-radius: 100px;
+                }
+                .yt {
+                    color: #FF0000;
+                }
+                .ig {
+                    color: #FBAD50;
+                }
             }
         }
+    }
+
+    hr {
+        margin: 10px 300px;
+        color: $white-color;
+        background-color: $white-color;
     }
 
     .footerBottom {

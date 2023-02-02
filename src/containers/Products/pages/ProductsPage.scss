@@ -29,6 +29,7 @@
             font-weight: 700;
             color: $white-color;
         }
+
         .category {
             margin: 10px 0 0 10px;
             text-indent: 10px;
@@ -36,14 +37,22 @@
             cursor: pointer;
 
             .itemCategory {
-                padding: 2px;
+                padding: 5px;
                 border: 1px solid #EEEEEE;
                 font-size: 16px;
                 font-weight: 700;
+                &:hover {
+                    background-color: $main-color;
+                }
+                .link {
+                    text-decoration: none;
+                    color: #606060;
+                }
             }
         }
+
         .price {
-            margin: 10px 0 0 10px;
+            margin: 10px 0 10px 10px;
             .itemPrice {
                 .checkBox {
                     display: flex;
@@ -188,8 +197,9 @@
         margin: 20px 0 0 10px;
         .top {
             @include flex-center;
-            margin-left: 20px;
+            margin: 20px;
             background-color: $grayText-color;
+            border-radius: 5px;
             .arrange {
                 margin-right: 20px;
                 text-indent: 20px;
@@ -206,7 +216,10 @@
         
         .products {
             @include flex-space-around;
-            margin: 10px 0;
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            margin: 10px 30px;
 
             .box {
                 width: 250px;
@@ -269,27 +282,37 @@
             
                 .detail-box {
                     width: 100%;
-                    @include flex-space-between;
+                    display: flex;
+                    flex-direction: column;
                     padding: 10px 20px;
                     box-sizing: border-box;
                     font-family: $font-inter;
-            
+                    cursor: pointer;
+                    
+                    span {
+                        color: $main-color;
+                        margin: 5px 0px;
+                        font-weight: 700;
+                        letter-spacing: 0.5px;
+                        padding-right: 8px;
+                    }
+
+                    a {
+                        color: $main-color;
+                        margin: 5px 0px;
+                        font-weight: 700;
+                        letter-spacing: 0.5px;
+                        padding-right: 8px;
+                    }
+
                     .type {
-                        display: flex;
-                        flex-direction: column;
-            
-                        a {
-                            color: $main-color;
-                            margin: 5px 0px;
-                            font-weight: 700;
-                            letter-spacing: 0.5px;
-                            padding-right: 8px;
-                        }
-            
+                        display: grid;
+                        grid-template-columns: 90% 10%;
+                        justify-content: space-between;
                         span {
                             color: rgba(26,26,26,0.5);
                         }
-            
+
                         .price {
                             color: $black-color;
                             font-weight: 600;
@@ -297,6 +320,10 @@
                             font-family: $font-inter;
                             letter-spacing: 0.5px;
                         }
+                    }
+                    svg {
+                        width: 24px;
+                        height: 24px;
                     }
                 }
             }

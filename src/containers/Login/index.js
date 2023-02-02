@@ -3,6 +3,8 @@ import { FiArrowRight } from "react-icons/fi";
 import { BsFacebook } from "react-icons/bs";
 import { FcGoogle } from "react-icons/fc";
 import './index.scss';
+import { Link } from 'react-router-dom';
+import login from "../../assets/images/Login.jpeg"
 
 function Login() {
   return (
@@ -28,9 +30,11 @@ function Login() {
                             </div>
                         </div>
                         <div className="login-bottom">
-                            <button type='submit'>Đăng nhập</button>
+                            <button>
+                                <Link to="/*" style={{ textDecoration: 'none', color: 'white' }}>Đăng nhập</Link>
+                            </button>
                             <div className="login-bottom-register">
-                                <p>Đăng ký</p>
+                                <Link to="/register" style={{ textDecoration: 'none', color: 'black' }}><p>Đăng ký</p></Link>
                                 <FiArrowRight />
                             </div>
                         </div>
@@ -49,7 +53,7 @@ function Login() {
                 </form>
             </div>
             <div className="login-right">
-                <img src="https://s3-alpha-sig.figma.com/img/a047/4723/bccd8a0346d8564e060842b0b4b62f80?Expires=1672617600&Signature=GZF9dstqN-r4DnEThgMdSiSNlcXtccOAxECu1BfXbJGmEuKUZO6OB7MQHj~rXuv0g3QKAMV1HgC~SN-9kKYamF7JO4ptpcv2oxmjfQEqgkc~flNB6httD17ZhsYcsor9WMvUkH6qiuOeCx0RE1NcgF54VgyuFdo2wHyoa2Kzn1xGsb-F4usQEXzej4spklFqwcuxA4fzafd60azXk4~DuAt0w~rAG7DShavXb3w1-mr20Ch64nzUgUEzENQGZL-EIOhkN6KvMFB7IENLrYoRVrJozXyozdBgjHLy2uIZOpOTo0qRAmJ87VTa1KCWHuScLINX1NoUY80l9SJy5X3zzw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
+                <img src={login} alt="1" />
             </div>
         </div>
     </div>

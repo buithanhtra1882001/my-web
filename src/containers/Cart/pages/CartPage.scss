@@ -2,21 +2,22 @@
 @import '../../../assets/styles/colors';
 @import '../../../assets/styles/fonts';
 
+.top {
+    margin: 20px 0 0 30px;
+    display: flex;
+    font-size: 16px;
+    font-weight: 700;
+    .path {
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+}
 .cartContainer {
     display: grid;
     grid-template-columns: 70% 30%;
-
     .leftContainer {
         margin: 20px 0 0 30px;
-        .top {
-            display: flex;
-            font-size: 16px;
-            font-weight: 700;
-            .path {
-                text-transform: uppercase;
-                margin-right: 10px;
-            }
-        }
+        
         .tableListProduct {
             margin: 10px;
             .tableHeader {
@@ -24,6 +25,9 @@
                 display: grid;
                 grid-template-columns: 55% 15% 15% 15%;
                 padding: 10px;
+                background-color: $main-color;
+                border-radius: 5px;
+                color: $white-color;
                 .checkBox {
                     display: flex;
                     align-items: center;                
@@ -35,7 +39,7 @@
                             content: '';
                             width: 1em;
                             height: 1em;
-                            border: .05em solid black;
+                            border: .1em solid $white-color;
                             margin-right: .5em;
                             border-radius: .15em;
                         }
@@ -63,11 +67,172 @@
                     }
                 }
             }
+            .tableBody {
+                margin: 20px 0px;
+                padding: 10px;
+                background-color: $main-color;
+                border-radius: 5px;
+                color: $white-color;
+                .item {
+                    display: grid;
+                    grid-template-columns: 55% 15% 15% 15%;
+                    align-items: center;
+                    justify-items: center;      
+                    padding: 10px;
+                    .checkBox {
+                        display: flex;
+                        align-items: center;          
+                        justify-content: center;      
+                        label {
+                            cursor: pointer;
+                            display: flex;
+    
+                            &:before {
+                                content: '';
+                                width: 1em;
+                                height: 1em;
+                                border: .1em solid $white-color;
+                                margin-right: .5em;
+                                border-radius: .15em;
+                            }
+                            
+                        }
+                        
+                        input[type="checkbox"] {
+                            cursor: pointer;
+                            opacity: 0;
+                            position: absolute;
+                        }
+    
+                        label:hover::before,
+                        input[type="checkbox"]:hover + label::before {
+                            background-color: $main-color;
+                        }
+    
+    
+                        input[type="checkbox"]:checked + label::before {
+                            content: '\002714';
+                            @include flex-center;
+                            justify-content: center;
+                            color: $white-color;
+                            background-color: $main-color;
+                        }
+
+                        .cartItem {
+                            display: flex;
+                            img {
+                                width: 120px;
+                                height: 150px;
+                                border-radius: 5px;
+                                margin: 0 10px;
+                            }
+                            .cartInfo {
+                                .type-bottom {
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        color: $black-color;
+                                    }
+                                    .discout {
+                                        margin-left: 50px;
+                                        text-decoration: line-through;
+                                        font-size: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .quantity {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        span {
+                            margin-right: 15px;
+                        }
+                        .quantityNumber {
+                            @include flex-center;
+                            border: 1px solid $white-color;
+                            padding: 5px 10px;
+                            border-radius: 5px;
+                            span {
+                                margin: 0px 15px;
+                            }
+                            .button {
+                                cursor: pointer;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                    .delete {
+                        cursor: pointer;
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+                
+            }
         }
 
     }
 
     .rightContainer {
-
+        background-color: $main-color;
+        margin: 20px 50px;
+        padding: 20px;
+        border-radius: 5px;
+        color: $white-color;
+        display: flex;
+        .checkout {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .cartItem {
+                display: flex;
+                img {
+                    width: 120px;
+                    height: 150px;
+                    border-radius: 5px;
+                    margin: 0 10px;
+                }
+                .cartInfo {
+                    .type-bottom {
+                        display: flex;
+                        align-items: center;
+                        margin: 10px 0;
+                        span {
+                            color: $black-color;
+                        }
+                        .discout {
+                            margin-left: 50px;
+                            text-decoration: line-through;
+                            font-size: 10px;
+                        }
+                    }
+                    .quantity {
+                         display: flex;
+                         div {
+                            margin-left: 20px;
+                         }
+                    }
+                }
+            }
+            .total {
+                @include flex-space-between                
+            }
+            .checkout-btn {
+                background-color: $white-color;
+                border: none;
+                padding: 10px;
+                border-radius: 50px;
+                font-size: 20px;
+                color: $red-color;
+                cursor: pointer;
+            }
+        }
+      
+    }
+    hr {
+        color: $white-color;
     }
 }

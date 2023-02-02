@@ -1,13 +1,15 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
+import Footer from '../../components/Footer'
+import Header from '../../components/Header'
 import ProductsPage from './pages/ProductsPage'
 
 function ProductIndex() {
   return (
-    <div>
-          <Routes>
-              <Route index element={<ProductsPage/>} />
-          </Routes>
+    <div className="productIndex">
+        <Header />
+        <ProductsPage />
+        <Footer />
       </div>
   )
 }

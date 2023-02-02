@@ -1,0 +1,170 @@
+@import '../../../assets/styles/mixin';
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.detailContainer {
+    margin: 20px 0 0 30px;
+    .breadcrumb {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .detailProduct {
+        margin: 50px;
+        display: grid;
+        grid-template-columns: 4fr 6fr;
+        .detailImage {
+            display: grid;
+            grid-template-columns: 4fr 1fr;
+            align-items: center;
+
+            .imgBig {
+                img {
+                    width: 400px;
+                    height: 500px;
+                    border-radius: 20px;
+                    border: 1px solid $main-color;
+                }
+            }
+            .imgSmall {
+                cursor: pointer;
+                img {
+                    width: 96px;
+                    height: 120px;
+                    border-radius: 5px;
+                }
+            }
+        }
+        .detailInfo {
+            margin-left: 100px;
+
+            .content {
+                display:flex;
+                margin: 20px 0;
+                p {
+                    margin-left: 10px;
+                    color: $main-color;
+                }
+            }
+            .price {
+                margin: 20px 0;
+                @include flex-center;
+
+                h4 {
+                    font-size: 24px;
+                    margin-right: 20px;
+                    color: $main-color;
+                }
+                span {
+                    font-size: 16px;
+                    color: $black-color;
+                    margin-right: 20px;
+                    font-weight: 500;
+                    text-decoration: line-through;
+                }
+                p {
+                    color: $red-color;
+                }
+            }
+            .quantity {
+                display: flex;
+                align-items: center;
+                span {
+                    margin-right: 15px;
+                }
+                .quantityNumber {
+                    @include flex-center;
+                    border: 1px solid $black-color;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    span {
+                        margin: 0px 15px;
+                    }
+                    .button {
+                        cursor: pointer;
+                        margin: 0px;
+                    }
+                }
+            }
+            .button {
+                @include flex-center;
+                margin: 10px 0;
+                .addToCart {
+                    padding: 10px;
+                    background-color: $white-color;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    border: 1px solid $main-color;
+                    color: $main-color;
+                    cursor: pointer;
+                    @include flex-center;
+                    .cartIcon {
+                        margin-right: 10px;
+                        font-size: 20px;
+                    }
+                }
+                .buyNow {
+                    padding: 10px 50px;
+                    background-color: $main-color;
+                    border-radius: 10px;
+                    color: $white-color;
+                    cursor: pointer;
+                }
+            }
+
+        }
+    }
+
+    .introduction {
+        width: 1200px;
+        p {
+            margin: 10px 0 50px 20px;
+        }
+    }
+    .information {
+        .info {
+            margin: 10px 0;
+
+            .infoContainer {
+                @include flex-center;
+                margin: 10px 20px;
+                p {
+                    margin: 10px 0;
+                }           
+                .leftInfo {
+                    margin-right: 100px;
+                }     
+            }
+        }
+        
+    }
+    .comment {
+        width: 1200px;
+
+        .topComment {
+            @include flex-space-between;
+        }
+
+        .bottomComment {
+            margin: 10px 20px;
+            @include flex-center;
+            .userIcon {
+                font-size: 50px;
+                background-color: $white-color;
+                color: $main-color;
+                border-radius: 100px;
+                margin-right: 30px;
+            }
+            .commentBox {
+                input {
+                    width: 1100px;
+                    height: 100px;
+                    text-indent: 20px;
+                    border: 1px solid $main-color;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+}

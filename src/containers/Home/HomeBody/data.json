@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1,
+    "name": "Sách Bán Chạy"       
+  },
+  {
+    "id": 2,
+    "name": "Sách Mới Phát Hành"      
+    },
+  {
+  "id": 3,
+  "name": "Sách Thiếu Nhi"      
+  },
+  {
+    "id": 4,
+    "name": "Sách Kinh Tế"       
+  },
+  {
+    "id": 5,
+    "name": "Sách Văn Học Trong Nước"       
+  },
+  {
+    "id": 6,
+    "name": "Sách Văn Học Nước Ngoài"       
+  },
+  {
+    "id": 7,
+    "name": "Sách Tin Học"       
+  },
+  {
+    "id": 8,
+    "name": "Sách Ngoại Ngữ"       
+  },
+  {
+    "id": 9,
+    "name": "Sách Giáo Khoa - Giáo Trình"      
+  },
+  {
+    "id": 10,
+    "name": "Sách Chuyên Ngành"      
+  },
+  {
+    "id": 11,
+    "name": "Light Novel"    
+  }
+]

@@ -1,0 +1,93 @@
+@import '../../../assets/styles/mixin';
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.profileContainer {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 80%;
+        .title {
+            text-align: center;
+            background-color: $main-color;
+            color: $white-color;
+        }
+        .leftContainer {   
+            .management {
+                margin: 10px 0 10px 10px;
+                cursor: pointer;
+
+                .title {
+                    padding: 10px;
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+                .item {
+                    .items {
+                        display: flex;
+                        align-items: center;
+                        border: 1px solid #EEEEEE;
+                        padding: 10px;
+                        .logout {
+                            display: flex;
+                            align-items: center;
+                            span {
+                                margin-right: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .rightContainer {
+            margin: 0 20px;
+            .path {
+                margin: 10px 0 20px 0;
+            }
+            .listOrder { 
+                .title {
+                    display: grid;
+                    grid-template-columns: 5% 15% 20% 20% 10% 10% 20%;
+                    font-weight: 300;
+                    font-size: 16px;
+                    span {
+                        border: 1px solid $white-color;
+                        padding: 10px;
+                    }
+                }
+                .item {
+                    display: grid;
+                    grid-template-columns: 5% 15% 20% 20% 10% 10% 20%;
+                    font-weight: 300;
+                    font-size: 16px;
+                    color: $main-color;
+                    text-align: center;
+                    span {
+                        border: 1px solid $main-color;
+                        padding: 15px;
+                    }
+                    .seeMore {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid $main-color;
+                        button {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin: 5px;
+                            padding: 10px 30px;
+                            background-color: $red-color;
+                            color: $white-color;
+                            border-radius: 20px;
+                            border: none;
+                            cursor: pointer;
+                            p {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

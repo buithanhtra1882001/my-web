@@ -1,0 +1,123 @@
+@import '../../../assets/styles/mixin';
+@import '../../../assets/styles/colors';
+@import '../../../assets/styles/fonts';
+
+.orderContainer {
+    .top {
+        .path {
+            margin: 20px 5px;
+            font-family: $font-roboto;
+            font-size: 20px;
+            font-weight: 700;
+        }
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 70% 30%;
+
+        .leftContainer {
+            .title {
+                margin: 50px;
+            }
+            .deliveryAddress {
+                .address {
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px 50px;
+                    span {
+                        margin-left: 20px;
+                    }
+                    input {
+                        width: 600px;
+                        height: 30px;
+                        padding-left: 10px;
+                        border-radius: 5px;
+                        border: 1px solid $main-color;
+                    }
+                }
+                .orderButton {
+                    padding: 10px 50px;
+                    border-radius: 20px;
+                    border: none;
+                    background-color: red;
+                    font-size: 20px;
+                    color: $white-color;
+                    margin-left: 765px;
+                    cursor: pointer;
+                }
+            }
+            .paymentMethods {
+                .checkBox {
+                    display: flex;
+                    align-items: center;
+                    margin: 10px 80px;
+                    cursor: pointer;
+                    img {
+                        margin: 5px 20px;
+                        width: 50px;
+                        height: auto;
+                    }
+
+                }
+            }
+        }
+
+        .rightContainer {
+            background-color: $main-color;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            color: $black-color;
+            display: flex;
+            max-height: 550px;
+            .checkout {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                .cartItem {
+                    display: flex;
+                    img {
+                        width: 120px;
+                        height: 150px;
+                        border-radius: 5px;
+                        margin: 0 10px;
+                    }
+                    .cartInfo {
+                        .type-bottom {
+                            display: flex;
+                            align-items: center;
+                            margin: 10px 0;
+                            span {
+                                color: $black-color;
+                            }
+                            .discout {
+                                margin-left: 50px;
+                                text-decoration: line-through;
+                                font-size: 10px;
+                            }
+                        }
+                        .quantity {
+                             display: flex;
+                             div {
+                                margin-left: 20px;
+                             }
+                        }
+                    }
+                }
+                .total {
+                    @include flex-space-between;
+                    margin-left: 150px               
+                }
+                .checkout-btn {
+                    background-color: $white-color;
+                    border: none;
+                    padding: 10px;
+                    border-radius: 50px;
+                    font-size: 20px;
+                    color: $red-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

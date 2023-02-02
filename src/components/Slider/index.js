@@ -50,14 +50,14 @@ function Slider() {
             data-carousel-button="prev"
             onClick={handleMoveLeft}
           >
-            <AiOutlineArrowLeft />
+            <AiOutlineArrowLeft className="button" />
           </button>
           <button
             className="carousel-button next"
             data-carousel-button="next"
             onClick={handleMoveRight}
           >
-            <AiOutlineArrowRight />
+            <AiOutlineArrowRight className="button"/>
           </button>
         </div>
 

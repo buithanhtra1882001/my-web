@@ -9,36 +9,37 @@ function Footer() {
         <div className="supportUser">
           <div className="title">Hỗ trợ khách hàng</div>
           <div className="content">
-            <div>Điện thoại: 0339876802</div>
-            <div>Email: 19522370@gm.uit.edu.vn</div>
+            <p>Điện thoại: 0339876802</p>
+            <p>Email: 19522370@gm.uit.edu.vn</p>
           </div>
         </div>
         <div className="supportPurchse">
           <div className="title">Hỗ trợ mua hàng</div>
           <div className="content">
-            <div>Chính sách thành viên</div>
-            <div>Chính sách đổi trả</div>
-            <div>Giao hàng - thanh toán</div>
-            <div>Chính sách bảo mật thông tin</div>
+            <p>Chính sách thành viên</p>
+            <p>Chính sách đổi trả</p>
+            <p>Giao hàng - thanh toán</p>
+            <p>Chính sách bảo mật thông tin</p>
           </div>
         </div>
         <div className="intro">
           <div className="title">Giới thiệu</div>
           <div className="content">
-            <div>Về UITBook</div>
-            <div>Tuyển dụng</div>
-            <div>Diễn đàn thảo luận</div>
+            <p>Về UITBook</p>
+            <p>Tuyển dụng</p>
+            <p>Diễn đàn thảo luận</p>
           </div>
         </div>
         <div className="connectWithUs">
           <div className="title">Kết nối với chúng tôi</div>
           <div className="contact">
-            <BsFacebook />
-            <BsYoutube />
-            <BsInstagram />
+            <BsFacebook className='fb'/>
+            <BsYoutube className='yt'/>
+            <BsInstagram className='ig'/>
           </div>
         </div>
       </div>
+      <hr />
       <div className="footerBottom">
         <div className="logo">
           <h1>UITBook</h1>
