@@ -3,7 +3,7 @@ import { listImages } from "./data";
 import "./index.scss";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
 
-function Slider() {
+function SliderTablet() {
   const [left, setLeft] = useState(0);
   const [numWidth, setNumWidth] = useState(0);
 
@@ -17,14 +17,14 @@ function Slider() {
 
   const handleMoveLeft = () => {
     if (left >= 0) {
-      setLeft(-2200);
+      setLeft(-1402);
     } else {
       setLeft((pre) => pre + carouselRef.current.offsetWidth);
     }
   };
 
   const handleMoveRight = () => {
-    if (left <= -2200) {
+    if (left <= -1402) {
       setLeft(0);
     } else {
       setLeft((pre) => pre - carouselRef.current.offsetWidth);
@@ -75,4 +75,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default SliderTablet;

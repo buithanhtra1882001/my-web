@@ -30,7 +30,7 @@
 
 
         .slider {
-            margin: 10px     20px;
+            margin: 10px 20px;
             position: relative;
 
             img {
@@ -74,6 +74,13 @@
                 right: 1rem;
             }
             
+        }
+
+        .sliderMobile {
+            display: none;
+        }
+        .sliderTablet {
+            display: none;
         }
     }
     .bodyProduct{
@@ -506,32 +513,231 @@
 }
 
 // Mobile: width <740px
-@media (max-width: 425px) {
-    // .header {
-
-    //     .headerTop {
-    //         max-width: 425px;
-    //         margin-left: 5px;
-    //         .logo {
-    //             img {
-    //                 max-width: 50px;
-    //             }
-    //         }
-    //         .searchBox {
-    //             input {
-    //                 max-width: 100px;
-    //                 max-height: 30px;
-    //             }
-    //         }
-    //         .rightButtons {
+@media (max-width: 740px) {
+    .homeBody {
+        margin-top: 110px;
+        .bodyHeader{
+            display: flex;
+            .slider {
+                display: none;
+            }
+            .sliderMobile {
+                display: block;
+                .slide {
+                    height: 100%;
+                    .carousel {
+                        height: 100%;
+                        .indicator button {
+                            cursor: pointer;
+                            font-size: 20px;
+                            height: 20px;
+                          }
+                    }
+                    img {
+                        height: 150px;
+                    }
+                }
+                margin: 10px 20px;
                 
-    //         }
-    //     }
-    // }
+                position: relative;
+
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                .slide-item {
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0;
+                }
+
+                .slide-item[data-active] {
+                    opacity: 1;
+                }
+
+                .slider-button {
+                    position: absolute;
+                    z-index: 2;
+                    background: none;
+                    border: none;
+                    font-size: 2rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    border-radius: 25rem;
+                    padding: 0 .25rem;
+                    background-color: $grayText-color;
+                    :hover, :focus {
+                        color: white;
+                    }
+                }
+                .slider-button.prev {
+                    left: 1rem;
+                }
+                .slider-button.next {
+                    right: 1rem;
+                }
+            }
+            .sliderTablet {
+                display: none;
+            }
+        } 
+        .bodyProduct {
+            grid-template-columns: 100%;
+            .bodyProductLeft {
+                .top {
+                    font-size: 10px;
+                    width: 100%;
+                }
+                .newBook {
+                    .products { 
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .box {
+                            margin: 10px;
+                        }
+                    }
+                }
+                .bestSeller {
+                    .products {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        .box {
+                            margin: 10px;
+                        }
+                    }
+                }
+            }
+            .bodyProductRight {
+                display: none;
+            }
+        } 
+    }
+    .category {
+        display: none;
+    }
+    .carousel {
+        height: 100%;
+    }
 }
 
 // Tablet: width >=740px and width <1024px
-@media only screen and (min-width: 46.1875em) and (max-width: 63.9375em) {
+@media (min-width: 741px) and (max-width: 1024px) {
+    .category {
+        display: none;
+    }
+    .carousel {
+        height: 100%;
+    }
+    .homeBody {
+        margin-top: 110px;
+        .bodyHeader{
+            display: flex;
+            .slider {
+                display: none;
+            }
+             .sliderMobile {
+                display: none;
+            }
+            .sliderTablet {
+                display: block;
+                width: 100%;
+                .slide {
+                    height: 100%;
+                    .carousel {
+                        height: 100%;
+                        .indicator button {
+                            cursor: pointer;
+                            font-size: 24px;
+                            height: 24px;
+                          }
+                    }
+                    img {
+                        height: 200px;
+                    }
+                }
+                margin: 10px 20px;
+                
+                position: relative;
     
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 300px;
+                    object-fit: cover;
+                    object-position: center;
+                }
+    
+                .slide-item {
+                    position: absolute;
+                    inset: 0;
+                    opacity: 0;
+                }
+    
+                .slide-item[data-active] {
+                    opacity: 1;
+                }
+    
+                .slider-button {
+                    position: absolute;
+                    z-index: 2;
+                    background: none;
+                    border: none;
+                    font-size: 2rem;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    border-radius: 25rem;
+                    padding: 0 .25rem;
+                    background-color: $grayText-color;
+                    :hover, :focus {
+                        color: white;
+                    }
+                }
+                .slider-button.prev {
+                    left: 1rem;
+                }
+                .slider-button.next {
+                    right: 1rem;
+                }
+            }
+        } 
+        .bodyProduct {
+            grid-template-columns: 100%;
+            .bodyProductLeft {
+                .newBook {
+                    .products {
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                        margin: 20px 100px;
+                        gap: 30px 100px;
+                        .box {
+                            width: 100%;
+                        }
+                    }
+                }
+                .bestSeller {
+                    .products {
+                        grid-template-columns: 1fr 1fr;
+                        gap: 30px 100px;
+                        margin: 20px 100px;
+                        .box {
+                            width: 100%;
+                        }
+                    }
+                }
+                
+            } 
+            .bodyProductRight {
+                display: none;
+            }
+        } 
+    }
 }
 

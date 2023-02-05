@@ -7,6 +7,7 @@ import img5 from "../images/books/sach_ban_chay/1.jpeg"
 import img6 from "../images/books/sach_ban_chay/2.jpeg"
 import img7 from "../images/books/sach_ban_chay/3.jpeg"
 import img8 from "../images/books/sach_ban_chay/4.jpeg"
+import { Link } from "react-router-dom";
 
 
 export const listBestSeller = [
@@ -19,7 +20,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/1" className="detail-box">
             <span>Harry Potter và chiếc cốc lửa</span>
             <div className="type">
                 <span>
@@ -29,7 +30,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 2 
@@ -41,7 +42,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/2" className="detail-box">
             <span>Milk and honey</span>
             <div className="type">
                 <span>
@@ -51,7 +52,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 3 
@@ -63,7 +64,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/3" className="detail-box">
             <span>Star War</span>
             <div className="type">
                 <span>
@@ -73,7 +74,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 4
@@ -85,7 +86,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/19" className="detail-box">
             <span>Harry Potter và bảo bối tử thần</span>
             <div className="type">
                 <span>
@@ -95,7 +96,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 5
@@ -107,7 +108,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/20" className="detail-box">
             <span>Vừa Tỉnh Dậy Thì Nghe Nói Tôi Kết Hôn Rồi</span>
             <div className="type">
                 <span>
@@ -117,7 +118,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 6
@@ -129,7 +130,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/21" className="detail-box">
             <span>Here U Are Tập 4 ( Bản Đặc Biệt)</span>
             <div className="type">
                 <span>
@@ -139,7 +140,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 7
@@ -151,7 +152,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/22" className="detail-box">
             <span>Đế Quốc Bóng Tối ( Bản Đặc Biệt)</span>
             <div className="type">
                 <span>
@@ -161,7 +162,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 8
@@ -173,7 +174,7 @@ export const listBestSeller = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/23" className="detail-box">
             <span>Bán Tinh (Combo 3 Tập )</span>
             <div className="type">
                 <span>
@@ -183,7 +184,7 @@ export const listBestSeller = [
                 </span>
                 <MdOutlineAddShoppingCart />
             </div>
-        </div>
+        </Link>
     </div>,
 
 ]

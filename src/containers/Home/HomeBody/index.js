@@ -3,13 +3,17 @@ import {MdOutlineAddShoppingCart} from 'react-icons/md';
 import './index.scss';
 import  newBook1  from '../../../assets/images/newBook1.jpeg';
 import  slideimg  from '../../../assets/images/slideimg.jpeg';
-import { AiOutlineRight, AiFillRightCircle, AiOutlineLeft, AiFillLeftCircle } from "react-icons/ai";
+import { AiOutlineRight, AiFillRightCircle, AiOutlineLeft, AiFillLeftCircle, AiFillHome } from "react-icons/ai";
 import Slider from '../../../components/Slider';
 import { listCategory } from './data';
 import { listNewBook } from '../../../assets/js/newBookData';
 import { listBestSeller } from '../../../assets/js/bestSellerData';
 import { listBestSellerInWeek } from '../../../assets/js/bestSellerInWeek';
 import ListCategories from '../../../assets/js/listCategories';
+import SliderMobile from '../../../components/SliderMobile';
+import SliderTablet from '../../../components/SliderTablet';
+import { BiCategory } from 'react-icons/bi';
+import { BsCartPlusFill, BsPersonCircle } from 'react-icons/bs';
 
 function HomeBody() {
   return (
@@ -20,6 +24,12 @@ function HomeBody() {
         </div>
         <div className="slider">
           <Slider />
+        </div>
+        <div className="sliderMobile">
+          <SliderMobile />
+        </div>
+        <div className="sliderTablet">
+          <SliderTablet />
         </div>
       </div>
       <div className="bodyProduct">
@@ -62,6 +72,7 @@ function HomeBody() {
           </div>
         </div>
      </div>
+     
     </div>
   )
 }

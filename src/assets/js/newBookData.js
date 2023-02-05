@@ -2,6 +2,7 @@ import img1 from "../images/books/sach_moi_phat_hanh/one_punch_man_13.jpeg"
 import img2 from "../images/books/sach_moi_phat_hanh/one_punch_man_12.jpeg"
 import img3 from "../images/books/sach_moi_phat_hanh/one_punch_man_11.jpeg"
 import img4 from "../images/books/sach_moi_phat_hanh/one_piece_100.webp"
+import { Link } from "react-router-dom"
 
 
 export const listNewBook = [
@@ -14,7 +15,7 @@ export const listNewBook = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/24" className="detail-box">
             <div className="detail-top">
             <div className="type">
                 <a href="#">One Punch Man tập 13</a>
@@ -30,7 +31,7 @@ export const listNewBook = [
             <p>Đã bán 1</p>
             <div className="sold-btn"></div>
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 2 
@@ -42,7 +43,7 @@ export const listNewBook = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/10" className="detail-box">
             <div className="detail-top">
             <div className="type">
                 <a href="#">One Punch Man tập 12</a>
@@ -58,7 +59,7 @@ export const listNewBook = [
             <p>Đã bán 5</p>
             <div className="sold-btn"></div>
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 3 
@@ -70,7 +71,7 @@ export const listNewBook = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/11" className="detail-box">
             <div className="detail-top">
             <div className="type">
                 <a href="#">One Punch Man tập 11</a>
@@ -86,7 +87,7 @@ export const listNewBook = [
             <p>Đã bán 10</p>
             <div className="sold-btn"></div>
             </div>
-        </div>
+        </Link>
     </div>,
 
     // Item 4
@@ -98,7 +99,7 @@ export const listNewBook = [
             <a href="#" className="buy-btn">Thêm Vào Giỏ Hàng</a>
             </div>
         </div>
-        <div className="detail-box">
+        <Link to="detail/25" className="detail-box">
             <div className="detail-top">
             <div className="type">
                 <a href="#">One Piece tập 100: “Haki Bá Vương” </a>
@@ -114,7 +115,7 @@ export const listNewBook = [
             <p>Đã bán 2</p>
             <div className="sold-btn"></div>
             </div>
-        </div>
+        </Link>
     </div>,
 
 ]

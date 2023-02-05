@@ -6,6 +6,7 @@ import img4 from "../images/books/sach_van_hoc_nuoc_ngoai/ngay_tho_nhu_nang.jpg"
 import img5 from "../images/books/sach_giao_khoa/toan_5.jpeg"
 import img6 from "../images/books/sach_van_hoc_trong_nuoc/con_chut_gi_de_nho.jpeg"
 import img7 from "../images/books/sach_ngoai_ngu/ielts.jpeg"
+import { Link } from "react-router-dom";
 
 export const listBestSellerInWeek = [
     // Item 1 
@@ -14,7 +15,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img1} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/6" className="detail-box">
                 <div className="type">
                     <a href="#">Bệ Phóng Vào Tương Lai - Khoa Học Địa Chất</a>
                     <p>Nguyễn Đăng Khoa biên dịch</p>
@@ -25,7 +26,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">33%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -39,7 +40,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img2} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/10" className="detail-box">
                 <div className="type">
                     <a href="#">One Punch Man tập 12</a>
                     <p>Yusuke Murata One</p>
@@ -50,7 +51,7 @@ export const listBestSellerInWeek = [
                         <div className="discout">20%</div>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -64,7 +65,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img3} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/3" className="detail-box">
                 <div className="type">
                     <a href="#">Star Wars: Light of the Jedi</a>
                     <p>Charles Soule</p>
@@ -75,7 +76,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">33%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -88,7 +89,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img4} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/16" className="detail-box">
                 <div className="type">
                     <a href="#">Ngân Thơ Như Nàng</a>
                     <p>Rowan Hisayo Buchanan</p>
@@ -99,7 +100,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">50%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -113,7 +114,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img5} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/8" className="detail-box">
                 <div className="type">
                     <a href="#">Bài Tập Cơ Bản Và Nâng Cao - Toán 5 Tiểu Học (Tập 2)</a>
                     <p>Trần Thị Thu Thủy</p>
@@ -124,7 +125,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">20%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -138,7 +139,7 @@ export const listBestSellerInWeek = [
             <div className="slide-img">
                 <img src={img6} alt="1" /> 
             </div>
-            <div className="detail-box">
+            <Link to="detail/17" className="detail-box">
                 <div className="type">
                     <a href="#">Còn Chút Gì Để Nhớ (Phiên Bản Màu Đặc Biệt)</a>
                     <p>Nguyễn Nhật Ánh</p>
@@ -149,7 +150,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">66%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
@@ -163,7 +164,7 @@ export const listBestSellerInWeek = [
         <div className="slide-img">
             <img src={img7} alt="1" /> 
         </div>
-            <div className="detail-box">
+            <Link to="detail/12" className="detail-box">
                 <div className="type">
                     <a href="#">Ielts Vocab - No Worries!</a>
                     <p>Vũ Hải</p>
@@ -174,7 +175,7 @@ export const listBestSellerInWeek = [
                         {/* <div className="discout">33%</div> */}
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
         <div className="overlay">
             <a href="#" className="buy-btn">Mua Ngay</a>
