@@ -51,12 +51,12 @@ function OrderPage() {
                 <div className="paymentMethods">
                     <span className="title">PHƯƠNG THỨC THANH TOÁN</span>
                     <div className="checkBox">
-                        <input type="checkbox" id="cbp1"/>
+                        <input type="radio" name="cbp1"/>
                         <img src="https://s3-alpha-sig.figma.com/img/8b63/7d50/1c0f4249dd4c84ca827e6ac941b51408?Expires=1676246400&Signature=ETOQaPi6XpyjQzpWDUnX5ckKdVYygAjfNOtDvucsXGiA4cbHfvBOdmz6eEaJeH3acbYaBnqM39KzI57bkYYn6rj34ZFkuG2xlJPwWfmY7lVS4x5AVMfsouDFByhjwtAGm2F7RlJyh8oUYTgakxZ7xWtMioslbLIx4b~NiKDVSyaLsxOF5J0w-oUqBGhGEdLXce1~8H7LlEILvy~zzAkmfUELdKbkHmEZZJb0E~T9UaOODnophppClRRg2YQn~-7GI7uZwjZhLPXOHMi0P91Sb9kas3Bvob9vMMvrQu8XTb39wkx7zWSY5M6cLK59RZsh9NcafN5vJPjRwi3RqrGfRQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
                         <span>Ví ZaloPay</span>
                     </div>
                     <div className="checkBox">
-                        <input type="checkbox" id="cbp1"/>
+                        <input type="radio" name="cbp1"/>
                         <img src="https://s3-alpha-sig.figma.com/img/1abe/b0a3/912ab0a3e906d635373be717997f8a1d?Expires=1676246400&Signature=a0yAY0fD2vxo-UKuL8kC~OvCXL4ZUeQ-p3xSom59mu2s1x3lR-EQvzAkj0IDEenw6J1T~YZIV45fnieX6COK~kag50Cvao~Ndl8YPgZHt-iV7e4rKVVpEXTqgWbodE5Z0efsCFqjjZkRSv~gwkTsemGv9R3Mj1-jevr2OCpLjhbbigFVvybM-UBR7mXATABp-CeBBHzwJlwrhLTfcH2Dm-9wBgocAY4Gya~ztCofpcciMAZdVEr1uaCD7j9azPyNEjeebWjmHxyIeBw0uz4rsZucH~dc5pzqnYS1qdFGswv6-mH0HXuXwrSraMblZE0gHU-y4-7bG~hGPr6sGciI0Q__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" />
                         <span>Thanh toán bằng tiền mặt khi nhận hàng</span>
                     </div>
